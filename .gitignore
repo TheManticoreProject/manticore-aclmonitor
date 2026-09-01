@@ -1,0 +1,48 @@
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/manticore-aclmonitor
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+
+# Builds dir
+/bin/
+
+# Build output directory used by the CI workflows and by a local build
+# following the same recipe
+/build/
+
+# Log files written with --logfile
+*.log
+
+# Private build-time working documents (plan.md, design notes, scratch scripts,
+# captured samples). Never committed.
+.private/*
+
+# Claude Code workspace. The skills under .claude/ exist to be USED while
+# building the tool, but they belong to the template, not to the tool.
+.claude/*
+
+# Snapshot files written by `snapshot` mode
+*.aclsnapshot
+*.aclsnapshot.gz
